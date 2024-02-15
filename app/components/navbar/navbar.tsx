@@ -1,9 +1,10 @@
 import Darkmode from "./darkmode";
+import { ShoppingCartIcon } from "@heroicons/react/24/solid"; 
 
 export default function Navbar() {
   return (
     <>
-      <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200">
+      <div className="shadow-md light:bg-white dark:bg-gray-900 dark:text-white duration-200">
         <div className="container py-3 sm:py-2">
           <div className="flex justify-between items-center">
             <div className=" flex items-center gap-2 text-2xl sm:text-3xl font-bold">
@@ -24,7 +25,9 @@ export default function Navbar() {
                   <a href="#" className="inline-block px-4 py-4 hover:text-primary">Contacto</a>
                 </li>
               </ul>
-              <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300">Order</button>
+              <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300 flex items-center gap-2">Order <ShoppingCartIcon className="h-4 w-4" /></button>
+              {/* heroicons shopping-cart */}
+
             </div>
           </div>
         </div>

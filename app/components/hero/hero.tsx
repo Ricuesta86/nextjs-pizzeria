@@ -1,5 +1,5 @@
 
-import SectionImage from "./sectionimage";
+import SectionImage from "./section-image";
 
 export default function Hero() {
   const bgImage = {

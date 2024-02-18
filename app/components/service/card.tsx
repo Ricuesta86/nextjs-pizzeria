@@ -30,7 +30,7 @@ export default function Card() {
       <div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-5 place-items-center">
           {serviceDatas.map(({ id, image, name, description }) => (
-            <div key={id} className="max-w-[300px] group rounded-2xl  dark:bg-gray-600  hover:bg-primary hover:text-white duration-300 p-4 shadow-xl">
+            <div key={id} className="max-w-[300px] group rounded-2xl  dark:bg-gray-600  dark:hover:bg-primary hover:bg-primary hover:text-white duration-300 p-4 shadow-xl">
               <div className="h-[100px]">
                 <Image
                   src={image}

@@ -15,7 +15,7 @@ export default function Hero() {
     <>
       <div
         style={bgImage}
-        className="min-h-[550px] sm:min-h-[600px] light:bg-gray-100 dark:bg-gray-950 dark:text-white duration-200 flex justify-center items-center"
+        className="min-h-[550px] sm:min-h-[600px] dark:bg-yellow-500 dark:text-white duration-200 flex justify-center items-center"
       >
         <div className="container pb-8 sm:pb-0">
           <div className="grid grid-cols-1 sm:grid-cols-2">

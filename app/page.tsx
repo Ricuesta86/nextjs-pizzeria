@@ -1,4 +1,5 @@
 import Banner from "./components/banner/banner";
+import Footer from "./components/footer/footer";
 import Hero from "./components/hero/hero";
 import Navbar from "./components/navbar/navbar";
 import Service from "./components/service/service";
@@ -12,6 +13,7 @@ export default function Home() {
       <Service />
       <Banner />
       <Testimonial />
+      <Footer />
     </>
   );
 }

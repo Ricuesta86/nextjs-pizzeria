@@ -4,7 +4,7 @@ export default function Service() {
   return (
     <>
       <div className="py-10">
-        <div className="container">
+        <div className="container dark:bg-red-800">
           <div className="text-center mb-20 max-w-[400px] mx-auto">
             <h1 className="text-3xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Nuestros Servicios</h1>
             <h2 className="text-4xl font-bold">Servicios</h2>

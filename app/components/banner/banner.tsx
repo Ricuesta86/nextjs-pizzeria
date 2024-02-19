@@ -7,7 +7,7 @@ import IconGrSecure from "../icon/gr-secure";
 export default function Banner() {
   return (
     <>
-      <div className="min-h-[550px] dark:bg-gray-800">
+      <div className="dark:bg-gray-800">
         <div>
           <div
             data-aos="slide-up"

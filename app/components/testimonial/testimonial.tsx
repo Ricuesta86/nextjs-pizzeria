@@ -1,4 +1,9 @@
+"use client";
+import Slider from "react-slick";
+import Carousel from "./carousel";
+
 export default function Testimonial() {
+
   return (
     <>
       <div className="py-10 dark:bg-gray-700">
@@ -13,6 +18,8 @@ export default function Testimonial() {
               fugiat saepe iste inventore suscipit deserunt.
             </p>
           </div>
+          {/* Seccion del Carousel */}
+            <Carousel />
         </div>
       </div>
     </>

@@ -1,4 +1,3 @@
-import { LockClosedIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import IconFastFood from "../icon/fast-food";
 import IconFoodTruck from "../icon/food-truck";

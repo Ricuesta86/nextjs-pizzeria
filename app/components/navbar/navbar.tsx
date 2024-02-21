@@ -1,5 +1,5 @@
+import { FaCartShopping } from "react-icons/fa6";
 import Darkmode from "./darkmode";
-import { ShoppingCartIcon } from "@heroicons/react/24/solid"; 
 
 export default function Navbar() {
   return (
@@ -11,23 +11,40 @@ export default function Navbar() {
               <a href="#">Pizzalola</a>
             </div>
             <div className="flex items-center gap-4">
-                <div>
-                    <Darkmode />
-                </div>
+              <div>
+                <Darkmode />
+              </div>
               <ul className="hidden sm:flex gap-4">
                 <li>
-                  <a href="#" className="inline-block px-4 py-4 hover:text-primary">Inicio</a>
+                  <a
+                    href="#"
+                    className="inline-block px-4 py-4 hover:text-primary"
+                  >
+                    Inicio
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="inline-block px-4 py-4 hover:text-primary">About</a>
+                  <a
+                    href="#"
+                    className="inline-block px-4 py-4 hover:text-primary"
+                  >
+                    About
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="inline-block px-4 py-4 hover:text-primary">Contacto</a>
+                  <a
+                    href="#"
+                    className="inline-block px-4 py-4 hover:text-primary"
+                  >
+                    Contacto
+                  </a>
                 </li>
               </ul>
-              <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300 flex items-center gap-2">Order <ShoppingCartIcon className="h-4 w-4" /></button>
+              <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300 flex items-center gap-2">
+                Ordene
+                <FaCartShopping className="h-4 w-4" />
+              </button>
               {/* heroicons shopping-cart */}
-
             </div>
           </div>
         </div>

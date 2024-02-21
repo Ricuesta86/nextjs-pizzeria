@@ -1,29 +1,49 @@
-export default function Footer(){
-    return (<>
-    <footer className="text-gray-600 body-font">
-  <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-    <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-
-      <span className="ml-3 text-xl">Tailblocks</span>
-    </a>
-    <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Tailblocks —
-      <a href="https://twitter.com/knyttneve" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@knyttneve</a>
-    </p>
-    <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-      <a className="text-gray-500">
-
-      </a>
-      <a className="ml-3 text-gray-500">
-
-      </a>
-      <a className="ml-3 text-gray-500">
-
-      </a>
-      <a className="ml-3 text-gray-500">
-
-      </a>
-    </span>
-  </div>
-</footer>
-    </>)
+import Link from "next/link";
+import { FaFacebook, FaInstagram, FaMobileAlt } from "react-icons/fa";
+import { FaLocationArrow, FaTwitter, FaWhatsapp } from "react-icons/fa6";
+export default function Footer() {
+  return (
+    <>
+      <footer className="bg-gray-100 dark:bg-gray-950">
+        <div className="container mx-auto">
+          <div className="grid md:grid-cols-3 py-5">
+            <div className="py-8 px-4">
+              <h1 className="flex items-center gap-3 text-xl sm:text-3xl text-justify sm:text-left font-bold">
+                Pizzalola
+              </h1>
+            </div>
+            <div className="py-8 px-4">
+              <div className="flex items-center gap-3">
+                <FaLocationArrow />
+                <p>Reina, Ave. 30 % 5 y 7 #515</p>
+              </div>
+              <div className="flex items-center gap-3 mt-3">
+                <FaMobileAlt />
+                <p>+53 55418925</p>
+              </div>
+            </div>
+            <div className="py-8 px-4">
+              <div className="flex items-center  md:justify-end gap-3">
+                <Link href={"#"} className="text-3xl">
+                  <FaFacebook />
+                </Link>
+                <Link href={"#"} className="text-3xl">
+                  <FaInstagram />
+                </Link>
+                <Link href={"#"} className="text-3xl">
+                  <FaTwitter />
+                </Link>{" "}
+                <Link href={"#"} className="text-3xl">
+                  <FaWhatsapp/>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="text-center py-10 border-t-2 border-gray-300/50">
+            <p>Hecho por RicuestaDev</p>
+          </div>
+        </div>
+      </footer>
+    </>
+  );
 }

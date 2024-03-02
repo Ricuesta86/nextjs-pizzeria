@@ -4,7 +4,7 @@ export default function Card() {
   const serviceDatas = [
     {
       id: 1,
-      image: "/biryani2.png",
+      image: "/pizza1.png",
       name: "Biryani",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora doloribus quidem molestias?",

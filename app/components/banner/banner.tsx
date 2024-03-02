@@ -17,7 +17,7 @@ export default function Banner() {
               {/** image Section */}
               <div>
                 <Image
-                  src={"/biryani2.png"}
+                  src={"/pizza1.png"}
                   alt="Image Pizza"
                   width={430}
                   height={430}

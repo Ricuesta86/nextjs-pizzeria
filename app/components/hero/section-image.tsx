@@ -37,7 +37,7 @@ export default function SectionImage() {
             width={450}
             height={450}
             alt="Section imagen"
-            className="max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200"
+            className="max-w-[65px] h-[65px] object-contain inline-block hover:scale-105 duration-200"
             onClick={() => changeImage(item.image)}
           />
         ))}

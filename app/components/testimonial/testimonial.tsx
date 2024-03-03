@@ -16,10 +16,10 @@ export default function Testimonial() {
               Testimonios de Nuestros Clientes
             </h1>
             <h2 className="text-4xl font-bold">Testimonio</h2>
-            <p className="text-xs text-gray-400">
+            {/* <p className="text-xs text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
               fugiat saepe iste inventore suscipit deserunt.
-            </p>
+            </p> */}
           </div>
           {/* Seccion del Carousel */}
           <Carousel />

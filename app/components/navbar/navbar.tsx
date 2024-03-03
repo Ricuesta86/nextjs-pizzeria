@@ -14,7 +14,7 @@ export default function Navbar() {
               <div>
                 <Darkmode />
               </div>
-              <ul className="hidden sm:flex gap-4">
+              {/* <ul className="hidden sm:flex gap-4">
                 <li>
                   <a
                     href="#"
@@ -38,8 +38,8 @@ export default function Navbar() {
                   >
                     Contacto
                   </a>
-                </li>
-              </ul>
+                </li> 
+              </ul>*/}
               <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300 flex items-center gap-2">
                 Ordene
                 <FaCartShopping className="h-4 w-4" />

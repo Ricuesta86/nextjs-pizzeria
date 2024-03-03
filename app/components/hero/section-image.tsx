@@ -3,11 +3,11 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function SectionImage() {
-  const [imageId, setImageId] = useState("/biryani2.png");
+  const [imageId, setImageId] = useState("/pizza1.png");
   const imageList = [
-    { id: 1, image: "/biryani2.png" },
-    { id: 2, image: "/biryani3.png" },
-    { id: 3, image: "/biryani5.png" },
+    { id: 1, image: "/pizza1.png" },
+    { id: 2, image: "/pizza2.png" },
+    { id: 3, image: "/pizza3.png" },
   ];
   const changeImage = (image: string) => {
     setImageId(image);

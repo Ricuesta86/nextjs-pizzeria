@@ -11,14 +11,14 @@ export default function Card() {
     },
     {
       id: 2,
-      image: "/biryani3.png",
+      image: "/pizza2.png",
       name: "Chicken kari",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora doloribus quidem molestias?",
     },
     {
       id: 3,
-      image: "/biryani5.png",
+      image: "/pizza3.png",
       name: "Cold coffee",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora doloribus quidem molestias?",

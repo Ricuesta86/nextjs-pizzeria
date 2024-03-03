@@ -27,7 +27,7 @@ export default function Banner() {
               {/* text section */}
               <div className="flex flex-col justify-center gap-6 sm:pt-0">
                 <h1 className=" text-center text-3xl sm:text-left sm:text-4xl font-bold">
-                  Pizzalola tu mejor opción
+                  Pizzaiola tu mejor opción
                 </h1>
                 <p className="text-center sm:text-left text-sm text-gray-500 tracking-wide leading-5">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit

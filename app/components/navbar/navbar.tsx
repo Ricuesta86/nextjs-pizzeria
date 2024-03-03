@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="container py-3 sm:py-2">
           <div className="flex justify-between items-center">
             <div className=" flex items-center gap-2 text-2xl sm:text-3xl font-bold">
-              <a href="#">Pizzalola</a>
+              <a href="#">Pizzaiola</a>
             </div>
             <div className="flex items-center gap-4">
               <div>

@@ -25,7 +25,7 @@ export default function Hero() {
             data-aos-once="true"
              className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
-                Bienvenido a Pizzalola
+                Bienvenido a Pizzaiola
               </h1>
               <p className="text-sm">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.

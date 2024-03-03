@@ -3,9 +3,9 @@ import "./globals.css";
 import Provider from "./provider";
 
 export const metadata: Metadata = {
-  title: "Pizzalola",
-  description: "Pizzeria Pizzalola",
-  keywords: ['pizzalola','pizza', 'pizzeria', 'fastfood']
+  title: "Pizzaiola",
+  description: "Pizzeria Pizzaiola",
+  keywords: ['pizzaiola','pizza', 'pizzeria', 'fastfood']
 };
 
 export default function RootLayout({

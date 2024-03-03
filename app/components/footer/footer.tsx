@@ -9,13 +9,13 @@ export default function Footer() {
           <div className="grid md:grid-cols-3 py-5">
             <div className="py-8 px-4">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl text-justify sm:text-left font-bold">
-                Pizzalola
+                Pizzaiola
               </h1>
             </div>
             <div className="py-8 px-4">
               <div className="flex items-center gap-3">
                 <FaLocationArrow />
-                <p>Reina, Ave. 30 % 5 y 7 #515</p>
+                <p>Reina, Ave. 40 % 5 y 7 #515</p>
               </div>
               <div className="flex items-center gap-3 mt-3">
                 <FaMobileAlt />

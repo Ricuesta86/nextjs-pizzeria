@@ -30,10 +30,23 @@ export default function Banner() {
                   Pizzaiola tu mejor opción
                 </h1>
                 <p className="text-center sm:text-left text-sm text-gray-500 tracking-wide leading-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                  numquam exercitationem voluptatem magnam beatae. Esse at odio
-                  amet veniam tenetur placeat tempore, architecto laboriosam
-                  doloribus consequatur, inventore tempora laborum ea.
+                  ¡Saborea la verdadera tradición italiana en nuestra pizzería!
+                  Te ofrecemos una gran variedad de deliciosas pizzas hechas con
+                  ingredientes frescos y de la mejor calidad. Con los sabores
+                  más innovadores, tenemos algo para todos los gustos.
+                </p>
+                <p className="text-center sm:text-left text-sm text-gray-500 tracking-wide leading-5">
+                  Además, contamos con servicio a domicilio para que puedas
+                  disfrutar de nuestras exquisitas pizzas en la comodidad de tu
+                  hogar. Y si prefieres disfrutar de un ambiente acogedor,
+                  también puedes visitarnos en nuestra cafeteria y disfrutar
+                  de un excelente servicio.
+                </p>
+                <p className="text-center sm:text-left text-sm text-gray-500 tracking-wide leading-5">
+                  No te pierdas la oportunidad de probar nuestras pizzas, ¡te
+                  garantizamos que no podrás resistirte a repetir! Ven y
+                  descubre por qué somos la mejor pizzería de la zona. ¡Te
+                  esperamos!
                 </p>
                 <div className="flex gap-6 justify-center sm:justify-start">
                   <div className="text-4xl h-18 w-18 shadow-sm p-5 rounded-full bg-violet-100 dark:bg-violet-300">
@@ -47,10 +60,10 @@ export default function Banner() {
                   </div>
                 </div>
                 <div className="flex justify-center sm:justify-normal pb-10">
-                <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300">
-                  Ordene ahora
-                </button>
-              </div>
+                  <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300">
+                    Ordene ahora
+                  </button>
+                </div>
               </div>
             </div>
           </div>

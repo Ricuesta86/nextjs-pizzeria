@@ -27,7 +27,7 @@ export default function Carousel() {
       id: 2,
       nombre: "María L.",
       texto:
-        "La pizzería tiene un ambiente acogedor y la pizza es deliciosa. Recomiendo probar la pizza de cuatro quesos, es una delicia",
+        "La pizzería tiene un ambiente acogedor y la pizza es deliciosa. Recomiendo probar la pizza de queso y acetuna, es una delicia",
       image: "/102x102.jpg",
     },
     {

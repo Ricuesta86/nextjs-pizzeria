@@ -18,37 +18,37 @@ export default function Carousel() {
   const testimoniosDatos = [
     {
       id: 1,
-      nombre: "Roberto",
+      nombre: "Juan M",
       texto:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, excepturi unde officia aliquid nulla possimus",
+      "La mejor pizza que he probado en mucho tiempo. Ingredientes frescos, masa crujiente, y un servicio impecable. Definitivamente regresaré",
       image: "/101x101.jpg",
     },
     {
       id: 2,
-      nombre: "Yole",
+      nombre: "María L.",
       texto:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, excepturi unde officia aliquid nulla rerum animi cum enim.",
+        "La pizzería tiene un ambiente acogedor y la pizza es deliciosa. Recomiendo probar la pizza de cuatro quesos, es una delicia",
       image: "/102x102.jpg",
     },
     {
       id: 3,
-      nombre: "William",
+      nombre: "Martín G.",
       texto:
-        "Lorem ipsum d earum amet est aspernatur exercitationem consequuntur rerum qui laudantium asperiores fugit, molestias animi cum enim.",
+      "¡Increíble! La pizza llegó caliente y en menos de 30 minutos. El sabor era espectacular, sin duda volveré a ordenar",
       image: "/103x103.jpg",
     },
     {
       id: 4,
-      nombre: "Roan",
+      nombre: "Laura",
       texto:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, excepturi unde officia aliquid nulla possimus earum amet est aspernatur",
+      "He estado buscando una buena pizzería por años y finalmente la encontré. La pizza es sabrosa y el personal es amable y atento. ¡Altamente recomendado!",
       image: "/105x105.jpg",
     },
     {
       id: 5,
       nombre: "Maite",
       texto:
-        "Lorem ipsum dolor sit, aspernatur exercitationem consequuntur rerum qui laudantium asperiores fugit, molestias animi cum enim.",
+      "¡La mejor pizza con servicio domicilio que he probado! La combinación de ingredientes es perfecta, la masa es deliciosa y el precio es muy razonable. Definitivamente mi nueva pizzería favorita",
       image: "/104x104.jpg",
     },
   ];

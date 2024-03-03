@@ -48,7 +48,7 @@ export default function Carousel() {
       id: 5,
       nombre: "Maite",
       texto:
-      "¡La mejor pizza con servicio domicilio que he probado! La combinación de ingredientes es perfecta, la masa es deliciosa y el precio es muy razonable. Definitivamente mi nueva pizzería favorita",
+      "¡La mejor pizza con servicio domicilio que he probado! La combinación de ingredientes es perfecta, la masa es deliciosa y el precio es muy razonable.",
       image: "/104x104.jpg",
     },
   ];

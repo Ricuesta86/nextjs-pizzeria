@@ -5,23 +5,23 @@ export default function Card() {
     {
       id: 1,
       image: "/pizza1.png",
-      name: "Biryani",
+      name: "Pizzas al domicilio",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora doloribus quidem molestias?",
+        "Reserve con dos horas antelación su pizza familiar. Difrutela!!!",
     },
     {
       id: 2,
       image: "/pizza2.png",
-      name: "Chicken kari",
+      name: "Cafeteria",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora doloribus quidem molestias?",
+        "Variedades de pizzas y servicios gastronómicos",
     },
     {
       id: 3,
       image: "/pizza3.png",
-      name: "Cold coffee",
+      name: "Refrescos y Confituras",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempora doloribus quidem molestias?",
+        "Ofertas de refrescos de pomos, galletas, chocolates y caramelos",
     },
   ];
 

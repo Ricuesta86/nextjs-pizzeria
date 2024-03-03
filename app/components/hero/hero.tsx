@@ -28,9 +28,7 @@ export default function Hero() {
                 Bienvenido a Pizzaiola
               </h1>
               <p className="text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Reiciendis a iure ratione recusandae! Quidem ullam
-                exercitationem quae adipisci libero distinctio.
+              ¡Ven a disfrutar de la mejor pizza en nuestra pizzeria! Con ingredientes frescos y de la mejor calidad, nuestras pizzas son irresistibles. Además, contamos con una amplia variedad de sabores y opciones para todos los gustos. ¡No te pierdas la oportunidad de probar nuestras deliciosas pizzas y vive una experiencia gastronómica única! Visítanos hoy y déjate sorprender por nuestro sabor inigualable. ¡Te esperamos con los brazos abiertos en nuestra pizzeria!
               </p>
               <div>
                 <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300">

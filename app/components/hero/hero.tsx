@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import SectionImage from "./section-image";
 
 export default function Hero() {
@@ -31,9 +32,9 @@ export default function Hero() {
               ¡Ven a disfrutar de la mejor pizza en nuestra pizzeria! Con ingredientes frescos y de la mejor calidad, nuestras pizzas son irresistibles. Además, contamos con una amplia variedad de sabores y opciones para todos los gustos. ¡No te pierdas la oportunidad de probar nuestras deliciosas pizzas y vive una experiencia gastronómica única! Visítanos hoy y déjate sorprender por nuestro sabor inigualable. ¡Te esperamos con los brazos abiertos en nuestra pizzeria!
               </p>
               <div>
-                <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300">
+                <Link href={"/orden"} className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300">
                   Ordene ahora
-                </button>
+                </Link>
               </div>
             </div>
 

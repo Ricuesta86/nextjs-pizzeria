@@ -1,5 +1,6 @@
 import { FaCartShopping } from "react-icons/fa6";
 import Darkmode from "./darkmode";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -8,7 +9,7 @@ export default function Navbar() {
         <div className="container py-3 sm:py-2">
           <div className="flex justify-between items-center">
             <div className=" flex items-center gap-2 text-2xl sm:text-3xl font-bold">
-              <a href="#">Pizzaiola</a>
+              <Link href={"/"}>Pizzaiola</Link>
             </div>
             <div className="flex items-center gap-4">
               <div>
@@ -40,10 +41,10 @@ export default function Navbar() {
                   </a>
                 </li> 
               </ul>*/}
-              <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300 flex items-center gap-2">
+              <Link href={"/orden"} className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300 flex items-center gap-2">
                 Ordene
                 <FaCartShopping className="h-4 w-4" />
-              </button>
+              </Link>
               {/* heroicons shopping-cart */}
             </div>
           </div>

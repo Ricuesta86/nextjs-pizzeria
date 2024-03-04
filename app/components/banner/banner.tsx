@@ -2,6 +2,7 @@ import Image from "next/image";
 import IconFastFood from "../icon/fast-food";
 import IconFoodTruck from "../icon/food-truck";
 import IconGrSecure from "../icon/gr-secure";
+import Link from "next/link";
 
 export default function Banner() {
   return (
@@ -60,9 +61,11 @@ export default function Banner() {
                   </div>
                 </div>
                 <div className="flex justify-center sm:justify-normal pb-10">
-                  <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300">
+
+                  <Link href={"/orden"} className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300">
                     Ordene ahora
-                  </button>
+                  </Link>
+
                 </div>
               </div>
             </div>

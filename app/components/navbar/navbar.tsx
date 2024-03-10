@@ -1,6 +1,8 @@
 import { FaCartShopping } from "react-icons/fa6";
 import Darkmode from "./darkmode";
 import Link from "next/link";
+import buttonCart from './button-cart';
+import ButtonCart from "./button-cart";
 
 export default function Navbar() {
   return (
@@ -46,6 +48,7 @@ export default function Navbar() {
                 <FaCartShopping className="h-4 w-4" />
               </Link>
               {/* heroicons shopping-cart */}
+              <ButtonCart />
             </div>
           </div>
         </div>

@@ -19,20 +19,6 @@ const OrdenCard: React.FC<OrdenCardProps> = ({ pizza }) => {
 
   const addToCart = useCartStore(state => state.addToCart)
 
-  const [cart, setCart] = useState<Pizza[]>([]);
-
-  const handleRemovePizzaCart = (value: number) => {
-    const newCart = [...cart];
-
-    newCart.splice(value, 1);
-    setCart(newCart);
-  };
-
-  const handelAddPizzaCart = (pizza:Pizza) =>{
-    setCart((cart) => cart.concat(pizza))
-    console.log(cart)
-  }
-
   return (
     <div
       data-aos="zoom-in"

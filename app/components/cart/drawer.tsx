@@ -10,6 +10,7 @@ import React from "react";
 export default function Drawer() {
   const openCart = useFromStore(useCartStore, (state) => state.openCart);
   const cart = useFromStore(useCartStore, (state) => state.cart);
+  const totalItems = useFromStore(useCartStore, (state) => state.totalItems);
   const removeFromCart = useCartStore((state) => state.removeFromCart);
   const clearCart = useCartStore((state) => state.clearCart);
 
@@ -86,7 +87,8 @@ export default function Drawer() {
           >
             Cerrar
           </button>
-          
+
+          {totalItems !== 0 ? (
             <Link
               href={`https://wa.me/5352040404?text=${encodeURIComponent(text || "")}`}
               target="_blank"
@@ -95,7 +97,9 @@ export default function Drawer() {
             >
               Comprar
             </Link>
-
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

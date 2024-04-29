@@ -16,6 +16,7 @@ interface Actions {
   addToCart: (Item: Pizza) => void;
   removeFromCart: (Item: Pizza) => void;
   changeOpenCart:()=>void;
+  clearCart:()=>void;
 }
 
 const INITIAL_STATE: State = {
@@ -57,6 +58,15 @@ export const useCartStore = create(
         set((state)=>({
           ...state,
           openCart: !state.openCart,
+        }))
+      },
+      clearCart:()=>{
+        set((state)=>({
+          ...state,
+          cart: INITIAL_STATE.cart,
+          openCart: INITIAL_STATE.openCart,
+          totalItems: INITIAL_STATE.totalItems,
+          totalPrice: INITIAL_STATE.totalPrice,
         }))
       }
     }),

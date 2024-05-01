@@ -42,6 +42,11 @@ export default function Drawer() {
         ),
     [cart]
   );
+  const cantAggregates =  (item:Pizza)=>{
+    let cant = 0
+    item.aggregates.map(agg=>agg.select?cant+=1:agg)
+    return cant;
+  }
 
   return (
     <div className="fixed inset-0 bg-[rgba(0,0,0,0.7)] z-10  ">
@@ -72,15 +77,18 @@ export default function Drawer() {
                 <span className="text-red-600">
                   {parseCurrency(item.price)}
                 </span>
-              </h3>
-              <div className="flex">
+              </h3>  
+              <div className="pb-3">   
+              {cantAggregates(item)  > 0 &&(<div className="flex">
                 <p className="pr-2">Con:</p>
                 <div>
                   {item.aggregates?.map(
                     (agg) => agg.select && <p key={agg.id}>{agg.name}</p>
                   )}
                 </div>
-              </div>
+              </div>)}
+
+              </div>    
             </div>
           ))}
         </div>

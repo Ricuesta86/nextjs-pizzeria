@@ -25,26 +25,7 @@ const api = {
       description:
         "Reserve con dos horas antelación su pizza familiar. Difrutela!!!",
       aggregates: [
-        {
-          id:"1",
-          name: "Doble queso",
-          price: 150,
-        },
-        {
-          id:"2",
-          name: "Salchicha",
-          price: 150,
-        },
-        {
-          id:"3",
-          name: "Chorizo",
-          price: 150,
-        },
-        {
-          id:"4",
-          name: "Aceituna",
-          price: 150,
-        },
+        
       ],
     },
     {

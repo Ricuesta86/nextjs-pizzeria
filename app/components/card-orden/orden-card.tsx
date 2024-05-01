@@ -1,8 +1,9 @@
 "use client";
-import { Pizza } from "@/app/api/api";
+import { Aggregate, Pizza } from "@/app/api/api";
 import { useCartStore } from "@/app/store/useCartStore";
+import clsx from "clsx";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface OrdenCardProps {
   pizza: Pizza;
@@ -16,8 +17,54 @@ function parseCurrency(value: number): string {
 }
 
 const OrdenCard: React.FC<OrdenCardProps> = ({ pizza }) => {
+  const [item, setItem] = useState(pizza);
+  const addToCart = useCartStore((state) => state.addToCart);
 
-  const addToCart = useCartStore(state => state.addToCart)
+  const aux: Aggregate[] = [
+    {
+      id: "1",
+      name: "Doble queso",
+      price: 150,
+    },
+    {
+      id: "2",
+      name: "Salchicha",
+      price: 150,
+    },
+    {
+      id: "3",
+      name: "Chorizo",
+      price: 150,
+    },
+    {
+      id: "4",
+      name: "Aceituna",
+      price: 150,
+    },
+  ];
+
+  const [aggs, setAggs] = useState<Aggregate[]>(aux);
+
+  console.log(aggs);
+
+  const handleTogget = (id: Aggregate["id"]) => {
+    setAggs((aggs) =>
+      aggs.map((agg) => (agg.id === id ? { ...agg, select: !agg.select } : agg))
+    );
+  };
+
+  const totalAggs =
+    aggs?.reduce((cal, item) => {
+      let result = 0;
+      item.select ? (result = cal + item.price) : (result = cal + 0);
+      return result;
+    }, 0) || 0;
+
+  const handleAdd = (item: Pizza) => {
+    const newPizza: Pizza = { ...item, aggregates: aggs, price:item.price + totalAggs };
+    console.log(newPizza);
+    addToCart(newPizza);
+  };
 
   return (
     <div
@@ -27,36 +74,59 @@ const OrdenCard: React.FC<OrdenCardProps> = ({ pizza }) => {
     >
       <div className="h-[100px]">
         <Image
-          src={pizza.image}
-          alt={pizza.name}
+          src={item.image}
+          alt={item.name}
           width={400}
           height={400}
           className="max-w-[200px] mx-auto block transform -translate-y-14 group-hover:scale-105 group-hover:rotate-6 duration-300"
         />
       </div>
       <div className="p-4 text-center">
-        <h1 className="text-xl font-bold">{pizza.name}</h1>
+        <h1 className="text-xl font-bold">{item.name}</h1>
         <p>
-          {parseCurrency(pizza.price)}
+          {parseCurrency(item.price)}
           {/* <span>$</span> */}
         </p>
       </div>
       <div className="pb-3">
         <h3 className="font-bold text-left">Agregados</h3>
         <ul>
-          {pizza.aggregates.map((aggregate) => (
-            <li key={aggregate.id} className="my-1">
-              <p className="flex justify-between">
+          {aggs.map((aggregate) => (
+            <li
+              key={aggregate.id}
+              className={
+                aggregate.select
+                  ? "bg-blue-300 rounded-full my-1 px-2"
+                  : "my-1 px-2"
+              }
+            >
+              <p className="flex justify-between items-center">
                 {aggregate.name}
-                <span>{parseCurrency(aggregate.price)}</span>
+                <span className="px-2">{parseCurrency(aggregate.price)}</span>
+                {aggregate.select ? (
+                  <button
+                    onClick={() => handleTogget(aggregate.id)}
+                    className="rounded-full bg-red-400 h-6 w-6"
+                  >
+                    -
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => handleTogget(aggregate.id)}
+                    className="rounded-full bg-green-400 h-6 w-6"
+                  >
+                    +
+                  </button>
+                )}
               </p>
             </li>
           ))}
         </ul>
       </div>
       <div className="flex justify-center">
-        <button className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300"
-        onClick={() => addToCart(pizza)}
+        <button
+          className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300"
+          onClick={() => handleAdd(item)}
         >
           Adicionar
         </button>

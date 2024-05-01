@@ -73,7 +73,14 @@ export default function Drawer() {
                   {parseCurrency(item.price)}
                 </span>
               </h3>
-              {item.aggregates?.map((agg) => <p key={agg.id}>{agg.name}</p>)}
+              <div className="flex">
+                <p className="pr-2">Con:</p>
+                <div>
+                  {item.aggregates?.map(
+                    (agg) => agg.select && <p key={agg.id}>{agg.name}</p>
+                  )}
+                </div>
+              </div>
             </div>
           ))}
         </div>

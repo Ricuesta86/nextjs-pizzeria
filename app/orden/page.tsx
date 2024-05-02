@@ -9,7 +9,7 @@ export default function Oferta() {
 
       <div className="container m-auto">
         <h1 className="m-6 pb-3 text-center text-3xl font-bold">
-          A la Orden
+          A la orden
         </h1>
         <CardOrden />
       </div>

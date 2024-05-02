@@ -1,10 +1,12 @@
+"use client"
 import { FaCartShopping } from "react-icons/fa6";
 import Darkmode from "./darkmode";
 import Link from "next/link";
-import buttonCart from './button-cart';
+import { usePathname } from 'next/navigation';
 import ButtonCart from "./button-cart";
 
 export default function Navbar() {
+  const pathname = usePathname();
   return (
     <>
       <div className="shadow-md dark:bg-gray-900 dark:text-white duration-200">
@@ -43,12 +45,13 @@ export default function Navbar() {
                   </a>
                 </li> 
               </ul>*/}
-              <Link href={"/orden"} className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300 flex items-center gap-2">
+              {pathname !== "/orden" ?
+              (<Link href={"/orden"} className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full hover:scale-105 duration-300 flex items-center gap-2">
                 Ordene
                 <FaCartShopping className="h-4 w-4" />
-              </Link>
-              {/* heroicons shopping-cart */}
-              <ButtonCart />
+              </Link>):(
+              <ButtonCart />)
+            }
             </div>
           </div>
         </div>

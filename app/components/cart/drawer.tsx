@@ -33,7 +33,7 @@ export default function Drawer() {
         ?.reduce(
           (message, product) =>
             message.concat(
-              ` * ${product.name} - ${parseCurrency(product.price)}\n`
+              ` ${product.toStringAgg}\n`
             ),
           ``
         )
@@ -42,6 +42,7 @@ export default function Drawer() {
         ),
     [cart]
   );
+  console.log(encodeURIComponent(text || ""))
   const cantAggregates =  (item:Pizza)=>{
     let cant = 0
     item.aggregates.map(agg=>agg.select?cant+=1:agg)
@@ -105,7 +106,7 @@ export default function Drawer() {
 
           {totalItems !== 0 ? (
             <Link
-              href={`https://wa.me/5352040404?text=${encodeURIComponent(text || "")}`}
+              href={`https://wa.me/5352137603?text=${encodeURIComponent(text || "")}`}
               target="_blank"
               className="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-1 rounded-full hover:scale-105 duration-300 flex items-center gap-2"
               onClick={() => clearCart()}

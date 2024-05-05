@@ -45,8 +45,6 @@ const OrdenCard: React.FC<OrdenCardProps> = ({ pizza }) => {
 
   const [aggs, setAggs] = useState<Aggregate[]>(aux);
 
-  console.log(aggs);
-
   const handleTogget = (id: Aggregate["id"]) => {
     setAggs((aggs) =>
       aggs.map((agg) => (agg.id === id ? { ...agg, select: !agg.select } : agg))
@@ -60,9 +58,21 @@ const OrdenCard: React.FC<OrdenCardProps> = ({ pizza }) => {
       return result;
     }, 0) || 0;
 
+  const textAggs = (item: Aggregate[]) => {
+   return item.reduce((message, agg) => agg.select? message.concat(`---- ${agg.name} - ${agg.price} \n `): message, "");
+  };
+
   const handleAdd = (item: Pizza) => {
-    const newPizza: Pizza = { ...item, aggregates: aggs, price:item.price + totalAggs };
-    console.log(newPizza);
+    let toStringAgg: string = `* ${item.name} - ${item.price}\n`;
+    let textAgg=  textAggs(aggs)
+    toStringAgg = `${toStringAgg} ${textAgg}`
+    
+    const newPizza: Pizza = {
+      ...item,
+      aggregates: aggs,
+      price: item.price + totalAggs,
+      toStringAgg,
+    };
     addToCart(newPizza);
   };
 

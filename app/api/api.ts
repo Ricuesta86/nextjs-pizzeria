@@ -12,7 +12,8 @@ export interface Pizza {
   image: string;
   description: string;
   price: number;
-  aggregates: Aggregate[]
+  aggregates: Aggregate[];
+  toStringAgg?:string;
 }
 
 const api = {

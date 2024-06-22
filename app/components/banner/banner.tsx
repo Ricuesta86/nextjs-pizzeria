@@ -31,7 +31,7 @@ export default function Banner() {
                   Pizzaiola tu mejor opción
                 </h1>
                 <p className="text-center sm:text-left text-sm text-gray-500 tracking-wide leading-5">
-                  ¡Saborea la verdadera tradición italiana en nuestra pizzería!
+                  ¡Saborea la verdadera tradición en nuestra pizzería!
                   Te ofrecemos una gran variedad de deliciosas pizzas hechas con
                   ingredientes frescos y de la mejor calidad. Con los sabores
                   más innovadores, tenemos algo para todos los gustos.

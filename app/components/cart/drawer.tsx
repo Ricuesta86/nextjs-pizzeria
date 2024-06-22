@@ -42,7 +42,7 @@ export default function Drawer() {
         ),
     [cart]
   );
-  console.log(encodeURIComponent(text || ""))
+  
   const cantAggregates =  (item:Pizza)=>{
     let cant = 0
     item.aggregates.map(agg=>agg.select?cant+=1:agg)

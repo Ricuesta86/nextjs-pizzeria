@@ -110,19 +110,17 @@ const OrdenCard: React.FC<OrdenCardProps> = ({ pizza }) => {
                   : "my-1 px-2"
               }
             >
-              <p className="flex justify-between items-center">
+              <p className="flex justify-between items-center cursor-pointer" onClick={() => handleTogget(aggregate.id)}>
                 {aggregate.name}
                 <span className="px-2">{parseCurrency(aggregate.price)}</span>
                 {aggregate.select ? (
-                  <button
-                    onClick={() => handleTogget(aggregate.id)}
+                  <button                    
                     className="rounded-full bg-red-400 h-6 w-6"
                   >
                     -
                   </button>
                 ) : (
                   <button
-                    onClick={() => handleTogget(aggregate.id)}
                     className="rounded-full bg-green-400 h-6 w-6"
                   >
                     +

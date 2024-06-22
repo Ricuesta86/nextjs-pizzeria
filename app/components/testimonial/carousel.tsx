@@ -34,7 +34,7 @@ export default function Carousel() {
       id: 3,
       nombre: "Martín G.",
       texto:
-      "¡Increíble! La pizza llegó caliente y en menos de 30 minutos. El sabor era espectacular, sin duda volveré a ordenar",
+      "¡Increíble! La pizza llegó caliente. El sabor era espectacular, sin duda volveré a ordenar",
       image: "/103x103.jpg",
     },
     {
